@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional portfolio website showcasing my projects and skills in web development">
+    <title>My Portfolio - Web Developer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header>
+        <nav aria-label="Main navigation">
+            <div class="container">
+                <div class="logo">
+                    <a href="#home" aria-label="Home">My Portfolio</a>
+                </div>
+                <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="fade-in">Hello, I'm <span class="highlight">Sultan Sakyp</span></h1>
+                <p class="fade-in-delay">Web Developer | Designer | Problem Solver</p>
+                <button class="cta-button" id="ctaButton">View My Work</button>
+            </div>
+            <div class="hero-image">
+                <img src="https://via.placeholder.com/400x400" alt="Profile picture of a web developer at work">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate web developer with a keen eye for creating beautiful, functional, and accessible websites. With experience in HTML, CSS, and JavaScript, I bring ideas to life through code.</p>
+                    <p>I believe in writing clean, maintainable code and creating user experiences that are both intuitive and delightful. When I'm not coding, you can find me exploring new technologies or contributing to open-source projects.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card" data-count="50">
+                        <h3 class="counter">0</h3>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat-card" data-count="3">
+                        <h3 class="counter">0</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat-card" data-count="100">
+                        <h3 class="counter">0</h3>
+                        <p>Happy Clients</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <img src="https://via.placeholder.com/400x300" alt="Screenshot of e-commerce website project showing product listings and shopping cart">
+                    <div class="project-info">
+                        <h3>E-Commerce Website</h3>
+                        <p>A fully responsive online store with shopping cart functionality and payment integration.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <button class="project-button" data-project="ecommerce">Learn More</button>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <img src="https://via.placeholder.com/400x300" alt="Screenshot of weather app showing current weather conditions and forecast">
+                    <div class="project-info">
+                        <h3>Weather App</h3>
+                        <p>Real-time weather application with location-based forecasts and interactive maps.</p>
+                        <div class="project-tags">
+                            <span class="tag">API</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Responsive</span>
+                        </div>
+                        <button class="project-button" data-project="weather">Learn More</button>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <img src="https://via.placeholder.com/400x300" alt="Screenshot of task manager app displaying to-do lists and completed tasks">
+                    <div class="project-info">
+                        <h3>Task Manager</h3>
+                        <p>Productivity app for managing daily tasks with drag-and-drop functionality.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">localStorage</span>
+                            <span class="tag">CSS Grid</span>
+                        </div>
+                        <button class="project-button" data-project="taskmanager">Learn More</button>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <img src="https://via.placeholder.com/400x300" alt="Screenshot of portfolio template with modern design and animations">
+                    <div class="project-info">
+                        <h3>Portfolio Template</h3>
+                        <p>A modern, customizable portfolio template for creative professionals.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">Animations</span>
+                        </div>
+                        <button class="project-button" data-project="portfolio">Learn More</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>
+                            <span class="skill-name">HTML5</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="95" style="width: 0%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="skill-name">CSS3/SASS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90" style="width: 0%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85" style="width: 0%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="skill-name">React</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80" style="width: 0%"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Others</h3>
+                    <ul>
+                        <li>
+                            <span class="skill-name">Git/GitHub</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="88" style="width: 0%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="skill-name">Responsive Design</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="92" style="width: 0%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="skill-name">Accessibility</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="87" style="width: 0%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="skill-name">UI/UX Design</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75" style="width: 0%"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <form id="contactForm" class="contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required aria-required="true" placeholder="Your Name">
+                        <span class="error-message" aria-live="polite"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required aria-required="true" placeholder="your.email@example.com">
+                        <span class="error-message" aria-live="polite"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" required aria-required="true" placeholder="Your message here..."></textarea>
+                        <span class="error-message" aria-live="polite"></span>
+                    </div>
+                    <button type="submit" class="submit-button">Send Message</button>
+                    <div id="formStatus" class="form-status" role="status" aria-live="polite"></div>
+                </form>
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <ul>
+                        <li>
+                            <img src="https://via.placeholder.com/24" alt="" role="presentation">
+                            <span>your.email@example.com</span>
+                        </li>
+                        <li>
+                            <img src="https://via.placeholder.com/24" alt="" role="presentation">
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li>
+                            <img src="https://via.placeholder.com/24" alt="" role="presentation">
+                            <span>San Francisco, CA</span>
+                        </li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="Visit my GitHub profile">
+                            <img src="https://via.placeholder.com/32" alt="GitHub logo">
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="Visit my LinkedIn profile">
+                            <img src="https://via.placeholder.com/32" alt="LinkedIn logo">
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Visit my Twitter profile">
+                            <img src="https://via.placeholder.com/32" alt="Twitter logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Project Details -->
+    <div id="projectModal" class="modal" role="dialog" aria-labelledby="modalTitle" aria-modal="true" hidden>
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <h3 id="modalTitle">Project Details</h3>
+            <div id="modalBody">
+                <!-- Content will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+            <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top" hidden>
+                ↑
+            </button>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
